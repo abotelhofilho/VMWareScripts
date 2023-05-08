@@ -1,0 +1,1 @@
+get-Get-Folder Compute | Get-VM | Get-View | Select-Object name,@{N='ToolsUpgradePolicy';E={$_.Config.Tools.ToolsUpgradePolicy } } | Sort-Object Name
